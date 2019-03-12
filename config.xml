@@ -43,7 +43,9 @@
   <gap:plugin name="org.apache.cordova.splashscreen"/>
   <gap:plugin name="org.apache.cordova.vibration"/>
   -->
+  <!--
   <icon src="icon.png"/>
+  -->
   <platform name="android">
     <allow-intent href="market:*"/>
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
