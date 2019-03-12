@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7DCF14F9-5889-41D2-97FA-797202619A86</string>
+	<key>IDESourceControlProjectName</key>
+	<string>test-phonegap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>35FB3DBFDDC9D77AE1AE500D3A28D88969C5D783</key>
+		<string>bitbucket.org:abesorasans/criterio.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/test-phonegap.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>35FB3DBFDDC9D77AE1AE500D3A28D88969C5D783</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>bitbucket.org:abesorasans/criterio.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>35FB3DBFDDC9D77AE1AE500D3A28D88969C5D783</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>35FB3DBFDDC9D77AE1AE500D3A28D88969C5D783</string>
+			<key>IDESourceControlWCCName</key>
+			<string>criterio</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,107 @@
+<div ng-show="pop_up === 'cara'" class="rodnan_popup">
+    <h3>CARA</h3>
+    <p ng-click="set_rodnan_input(0, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(0, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(0, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(0, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'brazo_d'" class="rodnan_popup"><h3>BRAZO DERECHO</h3>
+    <p ng-click="set_rodnan_input(1, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(1, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(1, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(1, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'torax_anterior'" class="rodnan_popup"><h3>TORAX ANTERIOR</h3>
+    <p ng-click="set_rodnan_input(2, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(2, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(2, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(2, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'brazo_i'" class="rodnan_popup"><h3>BRAZO IZQUIERDO</h3>
+    <p ng-click="set_rodnan_input(3, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(3, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(3, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(3, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'antebrazo_d'" class="rodnan_popup"><h3>ANTEBRAZO DERECHO</h3>
+    <p ng-click="set_rodnan_input(4, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(4, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(4, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(4, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'abdomen'" class="rodnan_popup"><h3>ABDOMEN</h3>
+    <p ng-click="set_rodnan_input(5, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(5, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(5, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(5, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'antebrazo_i'" class="rodnan_popup"><h3>ANTEBRAZO IZQUIERDO</h3>
+    <p ng-click="set_rodnan_input(6, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(6, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(6, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(6, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'dorso_mano_d'" class="rodnan_popup"><h3>DORSO DE MANO DERECHA</h3>
+    <p ng-click="set_rodnan_input(7, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(7, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(7, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(7, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'dorso_mano_i'" class="rodnan_popup"><h3>DORSO DE MANO IZQUIERDA</h3>
+    <p ng-click="set_rodnan_input(8, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(8, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(8, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(8, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'dedos_mano_d'" class="rodnan_popup"><h3>DEDOS MANO DERECHA</h3>
+    <p ng-click="set_rodnan_input(9, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(9, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(9, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(9, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'dedos_mano_i'" class="rodnan_popup"><h3>DEDOS MANO IZQUIERDA</h3>
+    <p ng-click="set_rodnan_input(10, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(10, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(10, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(10, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'muslo_d'" class="rodnan_popup"><h3>MUSLO DERECHO</h3>
+    <p ng-click="set_rodnan_input(11, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(11, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(11, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(11, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'muslo_i'" class="rodnan_popup"><h3>MUSLO IZQUIERDO</h3>
+    <p ng-click="set_rodnan_input(12, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(12, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(12, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(12, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'pierna_d'" class="rodnan_popup"><h3>PIERNA DERECHA</h3>
+    <p ng-click="set_rodnan_input(13, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(13, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(13, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(13, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'pierna_i'" class="rodnan_popup"><h3>PIERNA IZQUIERDA</h3>
+    <p ng-click="set_rodnan_input(14, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(14, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(14, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(14, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'dorso_pie_d'" class="rodnan_popup"><h3>DORSO PIE DERECHO</h3>
+    <p ng-click="set_rodnan_input(15, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(15, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(15, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(15, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'dorso_pie_i'" class="rodnan_popup"><h3>DORSO PIE IZQUIERDO</h3>
+    <p ng-click="set_rodnan_input(16, 0)" class="rodnan_form zero">0</p>
+    <p ng-click="set_rodnan_input(16, 1)" class="rodnan_form one">1</p>
+    <p ng-click="set_rodnan_input(16, 2)" class="rodnan_form two">2</p>
+    <p ng-click="set_rodnan_input(16, 3)" class="rodnan_form three">3</p>
+    <p ng-click="setPopup('')" class="cancel">Cancelar</p></div>
+<div ng-show="pop_up === 'rodnan_info'" class="rodnan_popup rodnan_popup_info"><h3>ESCALA DE PUNTUACIÓN</h3>
+    <p>0 = piel normal</p><p>1 = endurecimiento leve</p><p>2 = endurecimiento moderado </p>
+    <p>3 = endurecimiento grave <br/>(no puedes pellizcar la piel)</p>
+    <span ng-click="setPopup('')" class="close">x</span></div>

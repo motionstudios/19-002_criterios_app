@@ -1,0 +1,1 @@
+<h1>Players</h1><ul><li ng-repeat="footballPlayer in players track by $index" ng-class="{odd: $odd, even: $even}"> <player-profile player="footballPlayer">  </player-profile><button ng-click="deletePlayer(footballPlayer.id, $index)">X</button></li></ul><form ng-submit="addPlayer()"><input ng-model="newPlayer"/><input type="submit" value="AddPlayer"/></form>

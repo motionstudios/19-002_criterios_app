@@ -1,0 +1,14 @@
+2015-06-11 09:46:43.387 Criterio[33729:6222814] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/arnau/Library/Developer/CoreSimulator/Devices/9668BDFF-43BB-4037-BE49-D875E5F7FC19/data/Containers/Data/Application/1DD7DDD8-6EEA-4C3C-B2CA-96292D82AAE7/Library/Cookies/Cookies.binarycookies
+2015-06-11 09:46:43.684 Criterio[33729:6222814] Apache Cordova native platform version 3.7.0 is starting.
+2015-06-11 09:46:43.685 Criterio[33729:6222814] Multi-tasking -> Device: YES, App: YES
+2015-06-11 09:46:43.704 Criterio[33729:6222814] Unlimited access to network resources
+2015-06-11 09:46:43.717 Criterio[33729:6222814] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-06-11 09:46:44.555 Criterio[33729:6222814] Resetting plugins due to page load.
+2015-06-11 09:46:44.803 Criterio[33729:6222814] Finished load of: file:///Users/arnau/Library/Developer/CoreSimulator/Devices/9668BDFF-43BB-4037-BE49-D875E5F7FC19/data/Containers/Bundle/Application/10244CD7-883B-4515-85F2-4B17B9488E7F/Criterio.app/www/index.html#/

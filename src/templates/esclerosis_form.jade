@@ -1,0 +1,263 @@
+.header_buttons
+  a(href="javascript:history.back()" class="back_button") back
+  
+  a(href="#/" class="home_button") home
+
+
+.esclerosis_titles
+  h1.green CRITERIOS DE CLASIFICACIÓN
+  h1.blue DE LA ESCLEROSIS SISTÉMICA 2013 ACR/EULAR
+  .separator
+    img(src="img/separator.png")
+
+.esclerosis_form
+  
+  div(id="popup_container")
+    ng-include(src="'templates/popups_view.html'")
+  
+  p.green
+    span.dot
+    | Esclerosis de dedos de ambas manos y proximal a 
+    span(class="more_info",ng-click="setPopup('mcf')") MCF
+    |  (criterio suficiente)
+
+  .answers
+    .yes
+      label(for="mcf_yes", ng-class="{'selected' : questions[0] === 9}")
+        | Si
+        span 9
+      input(type="radio", id="mcf_yes", name="mcf", ng-value="9", ng-model="questions[0]" ng-change="sumQuestions();")
+
+    .no
+      input(type="radio", id="mcf_no", name="mcf", ng-value="0", ng-model="questions[0]", ng-change="sumQuestions();")
+      label(for="mcf_no", ng-class="{'selected' : questions[0] === 0}") 
+        | No
+        span -
+
+
+  p.green
+    span.dot
+    span(class="more_info",ng-click="setPopup('endurecimiento')") Endurecimiento 
+    |  de la piel de dedos (sólo se cuenta la puntuación más alta)
+  p.subquestion 
+    | - Dedos en salchicha "
+    span(class="more_info",ng-click="setPopup('puffy')") puffy
+    |"
+  .answers
+    .yes
+      label(for="puffy_yes", ng-class="{'selected' : puffy_esclerodactilia[0] === 2}")
+        | Si
+        span 2
+      input(type="radio", id="puffy_yes", name="puffy", ng-model="puffy_esclerodactilia[0]", ng-value="2", ng-change="sumQuestions('puffy_yes');")
+
+    .no
+      input(type="radio", id= "puffy_no", name="puffy", ng-model="puffy_esclerodactilia[0]", ng-value="0", ng-change="sumQuestions();")
+      label(for="puffy_no", ng-class="{'selected' : puffy_esclerodactilia[0] === 0}")
+        | No
+        span -
+
+  p.subquestion 
+    | - Esclerodactília (distal a MCF pero proximal a 
+    span(class="more_info",ng-click="setPopup('ifp')") IFP
+    | )
+  .answers
+    .yes
+      label(for="esclerodactilia_yes", ng-class="{'selected' : puffy_esclerodactilia[1] === 4}")
+        | Si
+        span 4
+      input(type="radio", id="esclerodactilia_yes", name="esclerodactilia", ng-value="4", ng-model="puffy_esclerodactilia[1]", ng-change="sumQuestions('esclerodactilia_yes');")
+    .no
+      input(type="radio", id="esclerodactilia_no", name="esclerodactilia", ng-value="0", ng-model="puffy_esclerodactilia[1]", ng-change="sumQuestions();")
+      label(for="esclerodactilia_no", ng-class="{'selected' : puffy_esclerodactilia[1] === 0}") 
+        | No
+        span -
+      
+  p.green
+    span.dot
+    | Lesiones en los pulpejos (sólo se cuenta la puntuación más alta)
+
+  p.subquestion 
+    | - 
+    span(class="more_info",ng-click="setPopup('ulceras')") Úlceras digitales
+    |  (distal a IFP)
+
+  .answers
+    .yes
+      label(for="ulceras_yes", ng-class="{'selected' : ulceras_pitting[0] === 2}")
+        | Si
+        span 2
+      input(type="radio", id="ulceras_yes", name="ulceras", ng-value="2", ng-model="ulceras_pitting[0]", ng-change="sumQuestions('ulceras_yes');")
+    .no
+      input(type="radio", id="ulceras_no", name="ulceras", ng-value="0", ng-model="ulceras_pitting[0]", ng-change="sumQuestions();")
+      label(for="ulceras_no", ng-class="{'selected' : ulceras_pitting[0] === 0}") 
+        | No
+        span -
+
+  p.subquestion - Lesiones en mordeduras de rata ("pitting")
+  .answers
+    .yes
+      label(for="pitting_yes", ng-class="{'selected' : ulceras_pitting[1] === 3}")
+        | Si
+        span 3
+      input(type="radio",id="pitting_yes", name="pitting", ng-value="3", ng-model="ulceras_pitting[1]", ng-change="sumQuestions('pitting_yes');")
+    .no
+      input(type="radio", id="pitting_no", name="pitting", ng-value="0", ng-model="ulceras_pitting[1]", ng-change="sumQuestions();")
+      label(for="pitting_no", ng-class="{'selected' : ulceras_pitting[1] === 0}") 
+        | No
+        span -
+
+  p.green
+    span.dot
+    span(class="more_info",ng-click="setPopup('telangiectasias')") Telangiectasias 
+    | redondas (no arañas vasculares)
+
+  .answers
+    .yes
+      label(for="aranas_yes", ng-class="{'selected' : questions[1] === 2}")
+        | Si
+        span 2
+      input(type="radio", id="aranas_yes", name="aranas", ng-value="2", ng-model="questions[1]", ng-change="sumQuestions();")
+    .no
+      input(type="radio", id="aranas_no", name="aranas", ng-value="0", ng-model="questions[1]", ng-change="sumQuestions();")
+      label(for="aranas_no", ng-class="{'selected' : questions[1] === 0}") 
+        | No
+        span -
+
+
+      
+  p.green 
+    span.dot
+    | Alteraciones   
+    span(class="more_info",ng-click="setPopup('capilaroscopicas')") capilaroscópicas 
+    | (dilataciones y/o pérdida)
+  .answers
+    .yes
+      label(for="capilaroscopicas_yes", ng-class="{'selected' : questions[2] === 2}")
+        | Si
+        span 2
+      input(type="radio", id="capilaroscopicas_yes", name="capilaroscopicas", ng-value="2", ng-model="questions[2]", ng-change="sumQuestions();")
+    .no
+      input(type="radio", id="capilaroscopicas_no" name="capilaroscopicas", ng-value="0", ng-model="questions[2]", ng-change="sumQuestions();")
+      label(for="capilaroscopicas_no", ng-class="{'selected' : questions[2] === 0}") 
+        | No
+        span -
+
+  p.green
+    span.dot
+    span(class="more_info",ng-click="setPopup('hap')") HAP
+    |  y/o  
+    span(class="more_info",ng-click="setPopup('epi')") EPI 
+    | (puntuación máxima 2)
+
+  p.subquestion 
+    | - HAP (
+    span(class="more_info",ng-click="setPopup('ccd')") CCD
+    | )
+  .answers
+    .yes
+      label(for="hap_yes", ng-class="{'selected' : hap_epi[0] === 2}")
+        | Si
+        span 2
+      input(type="radio", id="hap_yes" name="hap", ng-value="2", ng-model="hap_epi[0]", ng-change="sumQuestions('hap_yes');")    
+    .no
+      input(type="radio", id="hap_no" name="hap", ng-value="0", ng-model="hap_epi[0]", ng-change="sumQuestions();")
+      label(for="hap_no", ng-class="{'selected' : hap_epi[0] === 0}") 
+        | No
+        span -
+
+
+  p.subquestion 
+    | - EPI (
+    span(class="more_info",ng-click="setPopup('tc')") TACAR
+    |  o 
+    span(class="more_info",ng-click="setPopup('rx')") Rx
+    |  o crepitantes en "velcro" sin otra causa)
+  .answers
+    .yes
+      label(for="epi_yes", ng-class="{'selected' : hap_epi[1] === 2}")
+        | Si
+        span 2
+      input(type="radio", id="epi_yes" name="epi", ng-value="2", ng-model="hap_epi[1]", ng-change="sumQuestions('epi_yes');")
+    .no
+      input(type="radio", id="epi_no", name="epi", ng-value="0", ng-model="hap_epi[1]", ng-change="sumQuestions();")
+      label(for="epi_no", ng-class="{'selected' : hap_epi[1] === 0}") 
+        | No
+        span -
+
+  p.green 
+    span.dot
+    | Fenómeno de 
+    span(class="more_info",ng-click="setPopup('raynaud')") Raynaud
+  .answers
+    .yes
+      label(for="raynaud_yes", ng-class="{'selected' : questions[3] === 3}")
+        | Si
+        span 3
+      input(type="radio", id="raynaud_yes", name="raynaud", ng-value="3", ng-model="questions[3]", ng-change="sumQuestions();")
+    .no
+      input(type="radio", id="raynaud_no", name="raynaud", ng-value="0", ng-model="questions[3]", ng-change="sumQuestions();")
+      label(for="raynaud_no", ng-class="{'selected' : questions[3] === 0}") 
+        | No
+        span -
+
+  p.green 
+    span.dot
+    span(class="more_info",ng-click="setPopup('anticuerpos')") Autoanticuerpos
+    |  relacionados con ES (
+    span(class="more_info",ng-click="setPopup('aca')") ACA
+    | ; 
+    span(class="more_info",ng-click="setPopup('ata')") ATA
+    | ; 
+    span(class="more_info",ng-click="setPopup('rna')") RNA pol III
+    | ) (puntuación máxima 3)
+
+  p.subquestion 
+    | - ACA o 
+    span(class="more_info", ng-click="setPopup('aan')") ANAs
+    |  con patrón centromérico
+  .answers
+    .yes
+      label(for="aca_yes", ng-class="{'selected' : aca_ata_rna[0] === 3}")
+        | Si
+        span 3
+      input(type="radio", id="aca_yes", name="aca", ng-value="3", ng-model="aca_ata_rna[0]", ng-change="sumQuestions('aca_yes');")
+    .no
+      input(type="radio", id="aca_no", name="aca", ng-value="0", ng-model="aca_ata_rna[0]", ng-change="sumQuestions();")
+      label(for="aca_no", ng-class="{'selected' : aca_ata_rna[0] === 0}") 
+        | No
+        span -
+
+  p.subquestion 
+    | - ATA
+  .answers
+    .yes
+      label(for="ata_yes", ng-class="{'selected' : aca_ata_rna[1] === 3}")
+        | Si
+        span 3
+      input(type="radio", id="ata_yes", name="ata", ng-value="3", ng-model="aca_ata_rna[1]", ng-change="sumQuestions('ata_yes');")
+    .no
+      input(type="radio", id="ata_no", name="aca", ng-value="0", ng-model="aca_ata_rna[1]", ng-change="sumQuestions();")
+      label(for="ata_no", ng-class="{'selected' : aca_ata_rna[1] === 0}") 
+        | No
+        span -
+              
+
+  p.subquestion - RNA pol III
+  .answers
+    .yes
+      label(for="rna_yes", ng-class="{'selected' : aca_ata_rna[2] === 3}")
+        | Si
+        span 3
+      input(type="radio", id="rna_yes", name="rna", ng-value="3", ng-model="aca_ata_rna[2]", ng-change="sumQuestions('rna_yes');")
+    .no
+      input(type="radio", id="rna_no", name="rna", ng-value="0", ng-model="aca_ata_rna[2]", ng-change="sumQuestions();")
+      label(for="rna_no", ng-class="{'selected' : aca_ata_rna[2] === 0}") 
+        | No
+        span -
+            
+.separator
+  img(src="img/separator.png")
+    
+.result_link
+  a(href="#/esclerosis/esclerosis_result/{{score}}", class="main_button esclerosis_submit") VER RESULTADO
+  a(href="", class="info_icon", ng-click="setPopup('info')") info

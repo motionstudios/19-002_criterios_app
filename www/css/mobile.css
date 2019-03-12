@@ -1,0 +1,413 @@
+@media only screen and (max-device-width: 1000px) {
+  div#wrapper{
+    max-width: none;
+    width: 95%;
+    margin-top: 2em;
+    padding-bottom: 4em;
+    height: 90vh !important;
+    min-height: none !important;
+    overflow: scroll;
+  }
+
+  ul.main_menu{
+    margin-top: 5em;
+  }
+
+  p.green, p.subquestion, p.subtypes{
+    font-size: 2em;
+  }
+
+  p.subtypes{
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 2em;
+  }
+
+  .header_buttons{
+    clear: both;
+    width: 95%;
+    height: 90px;
+    padding: 0em;
+    margin: 0 auto;
+  }
+
+  a.back_button{
+    display: block;
+    position: relative;
+    float: left;
+    width: 79px;
+    height: 90px;
+    background: url('../img/back_button_mobile.png') no-repeat;
+    text-indent: -9000px;
+  }
+
+
+  a.home_button{
+    display: block;
+    position: relative;
+    float: right;
+    width: 90px;
+    height: 90px;
+    background: url('../img/home_mobile.png') no-repeat;
+    text-indent: -9000px;
+  }
+
+
+  div#footer{
+    max-width: none;
+    height: 100px;
+  }
+
+  div#footer ul.footer_tabs{
+    height: 100px;
+  }
+
+  div#footer ul.footer_tabs li{
+    height: 100px;
+  }
+
+  div#footer ul.footer_tabs li a{
+    height: 97px;
+    line-height: 97px;
+    font-size: 2em;
+  }
+
+
+
+  div#header .wrapper_img{
+    max-width: none;
+    width: 100%;
+  }
+
+  a.main_button{
+    line-height: 140px;
+    margin-bottom: 2em;
+    font-size: 3em;
+  }
+
+  a.main_button.esclerosis_submit{
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 1em;
+  }
+
+  .answers{
+    width: 420px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+
+  .yes label, .no label{
+    float: left;
+    display: block;
+    position: relative;
+    width: 190px;
+    height: 120px;
+    line-height: 120px;
+    background: url('../img/unselected_button.png') no-repeat right;
+    font-size: 3em;
+    font-weight: bold;
+  }
+
+  .no label{
+    margin-left: 40px;
+  }
+
+  .yes label.selected, .no label.selected{
+    background: url('../img/selected_button.png') no-repeat right;
+  }
+
+  .yes label.selected span, .no label.selected span{
+    width: 120px;
+    height: 120px;
+    line-height: 115px;
+  }
+
+  .popup{
+    width: 80%;
+    height: 400px;
+    max-width: none;
+    top: 10%;
+    box-shadow: 0px 0px 40px #888888;
+  }
+
+  .popup h3{
+    font-size: 4em;
+  }
+
+  .popup p{
+    font-size: 3em;
+  }
+
+  span.close{
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+    text-align: center;
+    background: #222;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -20px;
+    margin-right: -20px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    font-size: 4em;
+
+  }
+
+  .popup.large_popup{
+    height: 800px;
+  }
+
+  .popup.extra_large_popup{
+    height: 1170px;
+  }
+
+  .popup.info_large_popup{
+    top: 0px;
+    width: 90%;
+    height: 90vh;
+  }
+
+  .popup.info_large_popup h3{
+    font-size: 4em;
+  }
+
+  .popup.info_large_popup p{
+    font-size: 2.5em;
+  }
+  /*.popup.info_large_popup span.close{
+    margin-top: 0px;
+    margin-right: 0px;
+  }*/
+
+  h2.detected{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 3em;
+    margin-bottom: 2em;
+  }
+
+  .result{
+    width: 50%;
+    height: 25em;
+    margin: 0 auto;
+  }
+
+  .result h2{
+    font-size: 3em;
+    padding: 1em 0;
+  }
+
+  .result h3{
+    width: 99%;
+    font-size: 5em;
+    height: 3em;
+    line-height: 3em;
+  }
+
+  div.human_form{
+    width: 85%;
+    margin-left: 3em;
+    position: relative
+  }
+
+
+  .rodnan_button{
+    float: left;
+    display: block;
+    width: 120px;
+    height: 120px;
+    background: url('../img/unselected_button.png') no-repeat right;
+    position: absolute;
+    top: 10px;
+    left: 41.5%;
+    text-indent: -9000px
+  }
+
+  .rodnan_button.selected{
+    background: url('../img/selected_button.png') no-repeat right;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+    text-indent: 0px;
+    font-size: 2em;
+  }
+
+  .rodnan_button.brazo_d{
+    left: 15%;
+    top: 20%;
+  }
+
+  .rodnan_button.torax_anterior{
+    left: 41.5%;
+    top: 20%;
+  }
+
+  .rodnan_button.brazo_i{
+    left: 70%;
+    top: 20%;
+  }
+
+  .rodnan_button.antebrazo_d{
+    top: 35%;
+    left: 10%;
+  }
+
+  .rodnan_button.antebrazo_i{
+    top: 35%;
+    left: 78%;
+  }
+
+  .rodnan_button.abdomen{
+    top: 35%;
+    left: 41.5%;
+  }
+
+  .rodnan_button.dorso_mano_d{
+    top: 45%;
+    left: 3%;
+  }
+
+  .rodnan_button.dorso_mano_i{
+    top: 45%;
+    left: 85%;
+  }
+
+  .rodnan_button.dedos_mano_d{
+    top: 54%;
+    left: -4%;
+  }
+
+  .rodnan_button.dedos_mano_i{
+    top: 54%;
+    left: 95%;
+  }
+
+
+  .rodnan_button.muslo_d{
+    top: 55%;
+    left: 30%;
+  }
+
+  .rodnan_button.muslo_i{
+    top: 55%;
+    left: 56%;
+  }
+
+  .rodnan_button.pierna_d{
+    top: 72%;
+    left: 28%;
+  }
+
+  .rodnan_button.pierna_i{
+    top: 72%;
+    left: 61%;
+  }
+
+  .rodnan_button.dorso_pie_d{
+    top: 90%;
+    left: 26%;
+  }
+
+  .rodnan_button.dorso_pie_i{
+    top: 90%;
+    left: 65%;
+  }
+
+  .rodnan_result{
+    width: 14em;
+    height: 12em;
+    background: #c9d200;
+    position: absolute;
+    right: -80px;
+    bottom: 140px;
+  }
+
+  .rodnan_result h3.rodnan_title{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 2em;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0.15em 0;
+    line-height: 2em;
+  }
+
+  .rodnan_result h3.rodnan_result{
+    background: #fff;
+    line-height: 2.5em;
+    font-size: 3em;
+    padding: 0;
+    bottom: 0;
+    right: 0;
+    position: relative;
+    width: 99%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  a.info_icon{
+    width: 120px;
+    height: 120px;
+    background-image: url('../img/info_mobile.png');
+  }
+
+  span.info_icon{
+    float: none;
+    position: absolute;
+    right: -60px;
+    bottom: 0%;
+    width: 120px;
+    height: 120px;
+    background-image: url('../img/info_mobile.png');
+  }
+
+  .rodnan_popup{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    width: 70%;
+    height: 668px;
+    max-width: none;
+    padding: 1em 0;
+    padding-top: 0;
+    margin: auto;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0px 0px 20px #888888;
+    background: #fff;
+    z-index: 2;
+  }
+  .rodnan_popup h3{
+    margin: 0;
+    text-align: center;
+    padding: 1em 0;
+    padding-bottom: 0.5em;
+    font-size: 3em;
+  }
+  .rodnan_popup p{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2px;
+    background: #fafbed;
+    padding: 0.5em;
+    font-size: 3em
+  }
+
+
+
+
+
+
+}

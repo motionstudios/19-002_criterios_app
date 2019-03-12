@@ -1,0 +1,9 @@
+h1 Players
+ul
+  li(ng-repeat="footballPlayer in players track by $index", ng-class="{odd: $odd, even: $even}") 
+    player-profile(player= "footballPlayer")   
+    button(ng-click="deletePlayer(footballPlayer.id, $index)") X
+form(ng-submit="addPlayer()")
+  input(ng-model="newPlayer")
+  input(type="submit" value="AddPlayer")
+      

@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Criterio
+    script(src="js/libs.js")
+    script(src="js/build.js")
+    
+    link(type="text/css", rel="stylesheet", href="css/main.css")
+    link(type="text/css", rel="stylesheet", href="css/mobile.css")
+  body(ng-app="ngCriterio")            
+    #content(ng-controller="MainController")
+      #header
+        .wrapper_img
+          img(src="img/header_criterios.png", class="header")
+      #wrapper
+        ng-view        
+      div(id="footer" ng-show="visibility.footer")        
+        ul.footer_tabs
+          li(ng-class="{'selected' : tabs.esclerosis}")
+            a(href="#/esclerosis") ACR / EULAR
+          
+          li(ng-class="{'selected' : tabs.rodnan}")
+            a(href="#/rodnan") RODNANm
+            
+          li(ng-class="{'selected' : tabs.subtypes}")
+            a(href="#/subtypes") SUBTIPOS
+            
+          li(ng-class="{'selected' : tabs.info}")
+            a(href="#/info") INFO
+
+                  

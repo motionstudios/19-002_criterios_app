@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <link rel="icon" sizes="192x192" href="img/icon.png">
+        <link rel="apple-touch-icon" href="img/icon.png">
+        <!--<meta name="apple-mobile-web-app-status-bar-style" content="default">-->
+        <meta name="apple-mobile-web-app-title" content="Criterio">
+
+        <meta http-equiv="Content-Security-Policy" content="img-src * *.euromedice.net;"> 
+
+        <title>Criterio</title>
+        <script src="js/libs.js"></script>
+        <script src="js/build.js"></script>
+        <link type="text/css" rel="stylesheet" href="css/main.css">
+        <!--<link type="text/css" rel="stylesheet" href="css/mobile.css">-->
+    </head>
+    <body ng-app="ngCriterio">           
+        <div id="content" ng-controller="MainController">
+            <div id="header">
+                <div class="wrapper_img"><img src="img/header_logo.png" class="header"></div>
+            </div>
+            <div id="wrapper">
+                <ng-view>       </ng-view>
+            </div>
+            <div id="footer" ng-show="visibility.footer">       
+                <ul class="footer_tabs"><li ng-class="{'selected' : tabs.esclerosis}"><a href="#/esclerosis">ACR / EULAR</a></li>
+                    <li ng-class="{'selected' : tabs.rodnan}"><a href="#/rodnan">RODNANm</a></li>
+                    <li ng-class="{'selected' : tabs.subtypes}"><a href="#/subtypes">SUBTIPOS</a></li>
+                    <li ng-class="{'selected' : tabs.info}"><a href="#/info">INFO</a></li></ul>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,104 @@
+<div class="header_buttons">
+    <a href="javascript:history.back()" class="back_button">back</a>
+    <a href="#/" class="home_button">home</a>
+</div>
+
+<div id="popup_container" style="z-index: 5"><ng-include src="'templates/rodnan_popups.html'"></ng-include></div>
+
+<style>
+    img.map, map area{
+        outline: none;
+    }
+</style>
+
+<div class="caja_hombre" style="width:275px; margin-left:auto; margin-right:auto; margin-top: 0px;">
+    <img src="img/hombre_partes/lineas.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="lineas" class="colores z2"/>
+    <img src="img/hombre_partes/separaciones.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="separaciones" class="colores z1"/> 
+    <img src="img/hombre_partes/pie_de.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_pie_de" class="colores" ng-show="rodnan_questions[16] > 0"/> 
+    <img src="img/hombre_partes/pierna_de.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_pierna_de" class="colores" ng-show="rodnan_questions[14] > 0"/> 
+    <img src="img/hombre_partes/muslo_de.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_muslo_de" class="colores" ng-show="rodnan_questions[12] > 0"/> 
+    <img src="img/hombre_partes/pie_iz.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_pie_iz" class="colores" ng-show="rodnan_questions[15] > 0"/> 
+    <img src="img/hombre_partes/pierna_iz.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_pierna_iz" class="colores" ng-show="rodnan_questions[13] > 0"/> 
+    <img src="img/hombre_partes/muslo_iz.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_muslo_iz" class="colores" ng-show="rodnan_questions[11] > 0"/>    
+    <img src="img/hombre_partes/abdomen.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_abdomen" class="colores" ng-show="rodnan_questions[5] > 0"/>     
+    <img src="img/hombre_partes/dedos_de.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_dedos_de" class="colores" ng-show="rodnan_questions[10] > 0"/>      
+    <img src="img/hombre_partes/mano_de.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_mano_de" class="colores" ng-show="rodnan_questions[8] > 0"/>   
+    <img src="img/hombre_partes/antebrazo_de.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_antebrazo_de" class="colores" ng-show="rodnan_questions[6] > 0"/>     
+    <img src="img/hombre_partes/brazo_de.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_brazo_de" class="colores" ng-show="rodnan_questions[3] > 0"/>  
+    <img src="img/hombre_partes/dedos_iz.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_dedos_iz" class="colores" ng-show="rodnan_questions[9] > 0"/>    
+    <img src="img/hombre_partes/mano_iz.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_mano_iz" class="colores" ng-show="rodnan_questions[7] > 0"/>   
+    <img src="img/hombre_partes/antebrazo_iz.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_antebrazo_iz" class="colores" ng-show="rodnan_questions[4] > 0"/> 
+    <img src="img/hombre_partes/brazo_iz.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_brazo_iz" class="colores" ng-show="rodnan_questions[1] > 0"/> 
+    <img src="img/hombre_partes/torsos.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_torso" class="colores" ng-show="rodnan_questions[2] > 0"/>  
+    <img src="img/hombre_partes/cabeza.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_cabeza" class="colores" ng-show="rodnan_questions[0] > 0"/>
+    <img src="img/body_rodnan.png" name="map-image" width="275" usemap="#map-imageMap" border='0' hidefocus="true" id="body_rodnan"/>
+
+    <map name="map-imageMap" id="map-imageMap">
+
+        <area shape="circle" coords="133,39,27" href="#" title="cabeza" id='cabeza' ng-click="setPopup('cara')"/>
+        <area shape="poly" coords="116,63,116,78,91,89,100,125,91,152,98,173,136,164,171,170,179,150,171,120,179,91,149,74,149,62" href="#" title="torso" ng-click="setPopup('torax_anterior')"/>
+        <area shape="poly" coords="59,163,79,173,97,123,88,89,69,109" href="#" title="brazo-de" ng-click="setPopup('brazo_d')"/>
+        <area shape="poly" coords="58,167,25,234,45,242,81,177" href="#" title="antebrazo-de" ng-click="setPopup('antebrazo_d')"/>
+        <area shape="poly" coords="24,235,16,245,25,262,40,262,45,244" href="#" title="mano-de" ng-click="setPopup('dorso_mano_d')"/>
+        <area shape="poly" coords="13,247,7,263,13,281,29,288,37,282,39,264" href="#" title="dedos-de" ng-click="setPopup('dedos_mano_d')"/>
+        <area shape="poly" coords="98,175,93,220,131,265,138,265,176,220,171,173,136,167" href="#" title="barriga" ng-click="setPopup('abdomen')"/>
+        <area shape="poly" coords="92,224,83,282,87,332,119,334,129,294,131,267" href="#" title="muslo-de" ng-click="setPopup('muslo_d')"/>
+        <area shape="poly" coords="87,334,76,392,80,461,99,463,119,336" href="#" title="pierna-de" ng-click="setPopup('pierna_d')"/>
+        <area shape="poly" coords="78,463,68,492,99,499,99,465" href="#" title="pie-de" ng-click="setPopup('dorso_pie_d')"/>
+        <area shape="poly" coords="181,91,173,118,189,173,211,166,199,108" href="#" title="brazo-iz" ng-click="setPopup('brazo_i')"/>
+        <area shape="poly" coords="212,168,189,175,223,243,242,235" href="#" title="antebrazo-iz" ng-click="setPopup('antebrazo_i')"/>
+        <area shape="poly" coords="243,236,223,245,229,263,244,264,253,257,250,238" href="#" title="mano-iz" ng-click="setPopup('dorso_mano_i')"/>
+        <area shape="poly" coords="254,239,256,258,246,265,229,266,231,281,253,285,266,264" href="#" title="dedos-iz" ng-click="setPopup('dedos_mano_i')"/>
+        <area shape="poly" coords="177,223,137,267,151,336,183,332,188,274" href="#" title="muslo-iz" ng-click="setPopup('muslo_i')"/>
+        <area shape="poly" coords="182,334,150,337,170,468,190,466,193,382" href="#" title="pierna-iz" ng-click="setPopup('pierna_i')"/>
+        <area shape="poly" coords="189,468,170,469,170,497,203,497" href="#" title="pie-iz" ng-click="setPopup('dorso_pie_i')"/>
+    </map>
+    <div class="globo rodnan_cara">{{rodnan_questions[0]}}</div>
+    <div class="globo rodnan_brazo_d">{{rodnan_questions[1]}}</div>
+    <div class="globo rodnan_torso">{{rodnan_questions[2]}}</div>
+    <div class="globo rodnan_brazo_iz">{{rodnan_questions[3]}}</div>
+    <div class="globo rodnan_antebrazo_d">{{rodnan_questions[4]}}</div>
+    <div class="globo rodnan_abdomen">{{rodnan_questions[5]}}</div>
+    <div class="globo rodnan_antebrazo_iz">{{rodnan_questions[6]}}</div>
+    <div class="globo rodnan_mano_d">{{rodnan_questions[7]}}</div>
+    <div class="globo rodnan_mano_iz">{{rodnan_questions[8]}}</div>
+    <div class="globo rodnan_dedos_d">{{rodnan_questions[9]}}</div>
+    <div class="globo rodnan_dedos_iz">{{rodnan_questions[10]}}</div>
+    <div class="globo rodnan_muslo_d">{{rodnan_questions[11]}}</div>
+    <div class="globo rodnan_muslo_iz">{{rodnan_questions[12]}}</div>
+    <div class="globo rodnan_pierna_d">{{rodnan_questions[13]}}</div>
+    <div class="globo rodnan_pierna_iz">{{rodnan_questions[14]}}</div>
+    <div class="globo rodnan_pie_d">{{rodnan_questions[15]}}</div>
+    <div class="globo rodnan_pie_iz">{{rodnan_questions[16]}}</div>
+</div>
+
+<div ng-click="setPopup('cara')" ng-class="{'selected' : rodnan_active[0] === 1}" class="rodnan_button">{{rodnan_questions[0]}}</div>
+<div ng-click="setPopup('brazo_d')" ng-class="{'selected' : rodnan_active[1] === 1}" class="rodnan_button brazo_d">{{rodnan_questions[1]}}</div>
+<div ng-click="setPopup('torax_anterior')" ng-class="{'selected' : rodnan_active[2] === 1}" class="rodnan_button torax_anterior">{{rodnan_questions[2]}}</div>
+<div ng-click="setPopup('brazo_i')" ng-class="{'selected' : rodnan_active[3] === 1}" class="rodnan_button brazo_i">{{rodnan_questions[3]}}</div>
+<div ng-click="setPopup('antebrazo_d')" ng-class="{'selected' : rodnan_active[4] === 1}" class="rodnan_button antebrazo_d">{{rodnan_questions[4]}}</div>
+<div ng-click="setPopup('abdomen')" ng-class="{'selected' : rodnan_active[5] === 1}" class="rodnan_button abdomen">{{rodnan_questions[5]}}</div>
+<div ng-click="setPopup('antebrazo_i')" ng-class="{'selected' : rodnan_active[6] === 1}" class="rodnan_button antebrazo_i">{{rodnan_questions[6]}}</div>
+<div ng-click="setPopup('dorso_mano_d')" ng-class="{'selected' : rodnan_active[7] === 1}" class="rodnan_button dorso_mano_d">{{rodnan_questions[7]}}</div>
+<div ng-click="setPopup('dorso_mano_i')" ng-class="{'selected' : rodnan_active[8] === 1}" class="rodnan_button dorso_mano_i">{{rodnan_questions[8]}}</div>
+<div ng-click="setPopup('dedos_mano_d')" ng-class="{'selected' : rodnan_active[9] === 1}" class="rodnan_button dedos_mano_d">{{rodnan_questions[9]}}</div>
+<div ng-click="setPopup('dedos_mano_i')" ng-class="{'selected' : rodnan_active[10] === 1}" class="rodnan_button dedos_mano_i">{{rodnan_questions[10]}}</div>
+<div ng-click="setPopup('muslo_d')" ng-class="{'selected' : rodnan_active[11] === 1}" class="rodnan_button muslo_d">{{rodnan_questions[11]}}</div>
+<div ng-click="setPopup('muslo_i')" ng-class="{'selected' : rodnan_active[12] === 1}" class="rodnan_button muslo_i">{{rodnan_questions[12]}}</div>
+<div ng-click="setPopup('pierna_d')" ng-class="{'selected' : rodnan_active[13] === 1}" class="rodnan_button pierna_d">{{rodnan_questions[13]}}</div>
+<div ng-click="setPopup('pierna_i')" ng-class="{'selected' : rodnan_active[14] === 1}" class="rodnan_button pierna_i">{{rodnan_questions[14]}}</div>
+<div ng-click="setPopup('dorso_pie_d')" ng-class="{'selected' : rodnan_active[15] === 1}" class="rodnan_button dorso_pie_d">{{rodnan_questions[15]}}</div>
+<div ng-click="setPopup('dorso_pie_i')" ng-class="{'selected' : rodnan_active[16] === 1}" class="rodnan_button dorso_pie_i">{{rodnan_questions[16]}}</div>
+
+
+
+
+<div class="caja_result">
+    <div class="rodnan_result"><h3 class="rodnan_title">SUMA<br>TOTAL</h3><h3 class="rodnan_result">{{rodnan_score}}/51</h3></div>
+
+    <div class="rodnan_info"><span ng-click="setPopup('rodnan_info')" class="info_icon">info</span></div>
+</div>
+
+
+
+

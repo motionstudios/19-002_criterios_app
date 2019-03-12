@@ -1,0 +1,19 @@
+.header_buttons
+  a(href="javascript:history.back()" class="back_button") back
+  
+  a(href="#/" class="home_button") home
+
+h2.detected(ng-show="{{score >= 9}}")
+  | CUMPLE CRITERIOS DE CLASIFICACIÓN DE ESCLERODERMIA ACR/EULAR 2013
+
+h2.detected(ng-show="{{score < 9}}")
+  | NO CUMPLE CRITERIOS DE CLASIFICACIÓN DE ESCLERODERMIA ACR/EULAR 2013
+
+.result
+  h2
+    | Puntuacion
+  h3 {{score}}
+  
+//div(class="result_link", ng-show="{{score >= 9}}")
+//  a(href="#/subtypes", class="main_button esclerosis_submit") Ver subtipos
+  

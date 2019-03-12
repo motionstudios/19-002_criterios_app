@@ -1,0 +1,14 @@
+h1 Stadium
+form
+  .field
+    label Name
+    input(ng-model="stadium.name")
+  .field
+    input(type="checkbox", ng-model="stadium.hasGrass")
+    label Has Grass
+  .field(ng-show="stadium.hasGrass")
+    label Grass Height(cm)
+    input(type="number", ng-model="stadium.grassHeight")
+              
+              
+              
